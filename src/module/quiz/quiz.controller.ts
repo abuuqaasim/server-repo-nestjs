@@ -14,7 +14,7 @@ export class QuizController {
 
     @Post() //it is also done as @Post("/") or with create argument
     @HttpCode(200)
-    //Dto basically specifying the data being expected and provides validation for the object
+    //Dto basically specifies which data is expected and provides validation for the object
     @UsePipes(ValidationPipe) //The validation through the createQuizDto will not work until this line is added
     createQuiz(@Body() quizData: CreateQuizDto){ // Is used to get the data sent from the post request of type CreateQUizDto 
         return  {data: quizData};
