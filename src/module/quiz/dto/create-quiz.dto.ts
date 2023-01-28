@@ -13,5 +13,6 @@ export class CreateQuizDto{
     @Length(3)
 
     description: string;
+    questions: any;
 
 }

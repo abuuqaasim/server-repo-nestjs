@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { QuizModule } from './module/quiz/quiz.module';
 import { QuizController } from './module/quiz/quiz.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { typeOrmConfig } from './module/quiz/config/typeorm.conf';
+import { typeOrmConfig } from './config/typeorm.conf';
 
 @Module({
   
