@@ -35,7 +35,7 @@ export class QuestionService {
         const newQuestion = await this.questionRepo.save({
             question: questionDto.question,
         });
-    
+    //it checks if the quiz is empty so it can initialize with an empty array
         if (!quiz.questions) {
             quiz.questions = [];
         }
